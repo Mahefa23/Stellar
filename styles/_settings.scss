@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "font1";
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+  font-family: "font2";
+  src: url(../assets/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+@font-face {
+  font-family: "font3";
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: "font4";
+  src: url(../assets/fonts/SprinturaDemo.otf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+$font3: "font3", sans-serif;
+$font4: "font4", sans-serif;
+$principalColor: #e74119;
+$headerColor: #0b0e10;
+$blackVariant: #1E1E1E;
+$whiteVariant: rgba(255, 255, 255, 0.75);
+$whiteBackground: #F5F5F5;
+$gris: #D9D9D9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font1;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  padding: 45px;
+}

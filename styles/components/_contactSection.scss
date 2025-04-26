@@ -1,0 +1,136 @@
+.contactSection{
+    background: $whiteBackground;
+    .wrapper{
+        padding: 45px;
+        margin-left: 135px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+
+        .left{
+
+            h3{
+                font-size: 1.4rem;
+                font-family: $font2;
+                margin-bottom: 25px;
+            }
+            .store{
+                background: $blackVariant;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                position: relative;
+
+                .icon {
+                    color: $principalColor;
+                    position: absolute;
+                    top: 20px;
+                    left: 25px; 
+                    width: 24px;
+                    height: 24px;
+                  }
+
+                  .store-infos{
+                    color: #fff;
+                    line-height: 28px;
+                    margin-left: 50px;
+
+                    h4{
+                        font-size: 1rem;
+                    }
+                    p,span{
+                        font-size: .8rem;
+                        color: $whiteVariant;
+                        font-family: $font2;
+                    }
+
+                    .iconPhone{
+                        color: $principalColor;
+                        width: 24px;
+                        height: 16px;
+                    }
+                  }
+            }
+        }
+
+        .right {
+            background: $blackVariant;
+            border-radius: 10px;
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+          
+            h4 {
+              color: #fff;
+              font-family: $font2;
+              margin-bottom: 20px;
+              font-size: 1.2rem;
+            }
+          
+            form {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+          
+              .input {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                textarea{
+                    resize: none !important;
+                    height: 150px;
+                }
+                input,
+                textarea {
+                  background: transparent;
+                  border: 1px solid $whiteVariant;
+                  border-radius: 5px;
+                  padding: 10px;
+                  color: $whiteVariant;
+                  font-family: $font2;
+                  font-size: 0.9rem;
+          
+                  &::placeholder {
+                    color: $whiteVariant;
+                    opacity: 0.6;
+                  }
+          
+                  &:focus {
+                    outline: none;
+                    border-color: $principalColor;
+                  }
+                }
+          
+                textarea {
+                  resize: vertical;
+                  min-height: 100px;
+                }
+              }
+          
+              input[type="submit"] {
+                background: $principalColor;
+                color: #fff;
+                border: none;
+                padding: 12px 24px;
+                font-family: $font2;
+                font-size: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+          
+                &:hover {
+                  background: darken($principalColor, 10%);
+                }
+              }
+            }
+          
+            label {
+              color: $whiteVariant;
+              font-size: 0.9rem;
+              font-family: $font3;
+            }
+          }
+    }
+}

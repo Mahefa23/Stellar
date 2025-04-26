@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "font1";
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../assets/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+  font-family: "font3";
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: "font4";
+  src: url(../assets/fonts/SprinturaDemo.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "font1", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  padding: 45px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+}
+.navbar img {
+  width: 150px;
+  height: auto;
+  margin: -15px 0 0 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  display: flex;
+  gap: 52px;
+  font-size: 1rem;
+  margin: 35px 95px 0 0;
+}
+ul a {
+  color: white;
+}
+
+.header {
+  background: #0b0e10;
+  min-height: 100vh;
+  z-index: -2;
+}
+.header .banner {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  padding: 70px;
+  max-width: 1500px;
+  margin: auto;
+}
+.header .banner .left {
+  width: 100%;
+  margin-left: 95px;
+}
+.header .banner .left h1 {
+  font-size: 70px;
+  color: white;
+}
+.header .banner .left h1 span {
+  color: #e74119;
+}
+.header .banner .left p {
+  font-size: 1.2rem;
+  font-family: "font3", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 30px;
+  margin: 15px 0 45px 0;
+}
+.header .banner .left a {
+  color: white;
+  font-size: 0.9rem;
+  background: #e74119;
+  border-radius: 10px;
+  padding: 16px 32px;
+  letter-spacing: 1px;
+}
+.header .banner .right {
+  width: 100%;
+  position: relative;
+}
+.header .banner .right .circle {
+  width: 600px;
+  height: 600px;
+  background-color: #E74119;
+  position: absolute;
+  bottom: 150px;
+  left: 70%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: 0;
+}
+.header .banner .right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  transform: translateX(200px);
+  z-index: 1;
+}
+
+.characteristic {
+  background: #F5F5F5;
+  height: 440px;
+  position: relative;
+  z-index: 5;
+  margin-top: -430px;
+}
+.characteristic .card-characteristic {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.characteristic .card-characteristic .card {
+  background: #1E1E1E;
+  padding: 60px 35px;
+  border-radius: 10px;
+  width: 345px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+.characteristic .card-characteristic .card .icon {
+  color: #e74119;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+.characteristic .card-characteristic .card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+  margin-left: 10px;
+}
+.characteristic .card-characteristic .card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "font2", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 35px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.videoSection {
+  background: #0b0e10;
+  min-height: 100vh;
+  padding: 20px;
+}
+.videoSection h2 {
+  color: white;
+  text-align: center;
+}
+.videoSection p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-top: -25px;
+}
+.videoSection .videoWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 45px;
+}
+.videoSection .video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.videoSection .video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.videoSection .photo {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.videoSection .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.videoSection .photo img:nth-child(3) {
+  grid-column: 1/2;
+}
+.videoSection .photo img:nth-child(4) {
+  grid-column: 2/3;
+}
+
+.otherProduct {
+  background: #F5F5F5;
+  height: 540px;
+}
+.otherProduct .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.otherProduct .wrapper .card {
+  background: #D9D9D9;
+  border-radius: 10px;
+  width: 354px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.otherProduct .wrapper .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  height: 50%;
+  flex: 1;
+}
+.otherProduct .wrapper .card .product-infos {
+  background: #1E1E1E;
+  padding: 45px 25px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 15px;
+  width: 100%;
+  height: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.otherProduct .wrapper .card .product-infos h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.otherProduct .wrapper .card .product-infos p {
+  color: #e74119;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+.otherProduct .wrapper .card .product-infos a {
+  color: #fff;
+  font-size: 0.9rem;
+  background: #e74119;
+  border-radius: 10px;
+  padding: 16px 32px;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contactSection {
+  background: #F5F5F5;
+}
+.contactSection .wrapper {
+  padding: 45px;
+  margin-left: 135px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+.contactSection .wrapper .left h3 {
+  font-size: 1.4rem;
+  font-family: "font2", sans-serif;
+  margin-bottom: 25px;
+}
+.contactSection .wrapper .left .store {
+  background: #1E1E1E;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.contactSection .wrapper .left .store .icon {
+  color: #e74119;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+}
+.contactSection .wrapper .left .store .store-infos {
+  color: #fff;
+  line-height: 28px;
+  margin-left: 50px;
+}
+.contactSection .wrapper .left .store .store-infos h4 {
+  font-size: 1rem;
+}
+.contactSection .wrapper .left .store .store-infos p, .contactSection .wrapper .left .store .store-infos span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "font2", sans-serif;
+}
+.contactSection .wrapper .left .store .store-infos .iconPhone {
+  color: #e74119;
+  width: 24px;
+  height: 16px;
+}
+.contactSection .wrapper .right {
+  background: #1E1E1E;
+  border-radius: 10px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contactSection .wrapper .right h4 {
+  color: #fff;
+  font-family: "font2", sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.contactSection .wrapper .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactSection .wrapper .right form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactSection .wrapper .right form .input textarea {
+  resize: none !important;
+  height: 150px;
+}
+.contactSection .wrapper .right form .input input,
+.contactSection .wrapper .right form .input textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "font2", sans-serif;
+  font-size: 0.9rem;
+}
+.contactSection .wrapper .right form .input input::-moz-placeholder, .contactSection .wrapper .right form .input textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.6;
+}
+.contactSection .wrapper .right form .input input::placeholder,
+.contactSection .wrapper .right form .input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.6;
+}
+.contactSection .wrapper .right form .input input:focus,
+.contactSection .wrapper .right form .input textarea:focus {
+  outline: none;
+  border-color: #e74119;
+}
+.contactSection .wrapper .right form .input textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contactSection .wrapper .right form input[type=submit] {
+  background: #e74119;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-family: "font2", sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contactSection .wrapper .right form input[type=submit]:hover {
+  background: #ba3413;
+}
+.contactSection .wrapper .right label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  font-family: "font3", sans-serif;
+}
+
+.foot {
+  background: #1E1E1E;
+}
+.foot .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px;
+}
+.foot .wrapper .left h3 {
+  font-family: "font4", sans-serif;
+  font-size: 2rem;
+  color: #e74119;
+}
+.foot .wrapper .left p {
+  font-size: 0.9rem;
+  font-family: "font2", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10px;
+}
+.foot .wrapper .right .social-media {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  color: #e74119;
+  width: 50px;
+  height: 50px;
+}
+.foot .wrapper .right .link {
+  display: flex;
+  gap: 75px;
+  transform: translateX(-150px);
+}
+.foot .wrapper .right .link h4 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.foot .wrapper .right .link .navLink {
+  display: flex;
+  flex-direction: column;
+}
+.foot .wrapper .right .link .navLink a {
+  font-size: 0.8rem;
+  font-family: "font3", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 5px;
+}
+.foot .wrapper .right .link .contact p {
+  font-size: 0.8rem;
+  font-family: "font3", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 5px;
+}
+.foot .copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "font3", sans-serif;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=index.css.map */

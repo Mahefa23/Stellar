@@ -1,0 +1,49 @@
+.characteristic {
+  background: $whiteBackground;
+  height: 440px;
+  position: relative;
+  z-index: 5;
+  margin-top: -430px;
+
+  .card-characteristic {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+    .card {
+      background: $blackVariant;
+      padding: 60px 35px;
+      border-radius: 10px;
+      width: 345px; 
+      min-height: 220px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; 
+      align-items: flex-start;
+      position: relative; 
+  
+      .icon {
+        color: $principalColor;
+        position: absolute;
+        top: 15px;
+        left: 25px; 
+      }
+      h3 {
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: left;
+        margin-left: 10px;
+      }
+  
+      p {
+        color: $whiteVariant;
+        font-family: $font2;
+        font-size: 0.8rem;
+        margin-bottom: 35px;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+  }
+  
+}

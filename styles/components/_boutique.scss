@@ -1,0 +1,78 @@
+.boutique {
+  padding: 45px;
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
+    .card {
+      background: $gris;
+      border-radius: 10px;
+      width: 280px;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 50%;
+      }
+
+      .product-infos {
+        background: $blackVariant;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-grow: 1;  
+
+        h3 {
+          font-size: 1.1rem;
+          color: #fff;
+          margin-bottom: 5px;
+        }
+
+        p {
+          color: $principalColor;
+          font-size: 1rem;
+          margin-bottom: 15px;
+        }
+
+        a {
+          color: #fff;
+          font-size: 1rem;
+          background: $principalColor;
+          border-radius: 10px;
+          padding: 12px 20px;
+          text-align: center;
+          letter-spacing: 1px;
+          width: 100%;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .panier-summary {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+}

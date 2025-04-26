@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+
+  img {
+    width: 150px;
+    height: auto; 
+    margin: -15px 0 0 65px;
+    object-fit: cover;
+  }
+}
+ul {
+  display: flex;
+  gap: 52px;
+  font-size: 1rem;
+  margin: 35px 95px 0 0;
+    
+    a {
+      color: #ffff;
+    }
+  
+}
